@@ -22,3 +22,5 @@ Acceptance Criteria:
 7.	Site theme is configured as “bcferries” and impex is created to ensure the proper front end theme is loaded for the site 
 
 8.	A staging and online catalog are setup in the system
+
+asd
