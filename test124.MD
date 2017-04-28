@@ -1,3 +1,5 @@
 - Add *HYBRIS_BIN_DIR=C:\ffdei\hybris\bin* in debug config of IDE
 - Make travelservices depend on commercesearch in IDE
 - initialize the Test System
+
+asd
