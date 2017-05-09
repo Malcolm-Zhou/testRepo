@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader 
+      xmlns="https://ws.campaigner.com/2013/01">
+      <ErrorFlag>boolean</ErrorFlag>
+      <ReturnCode>string</ReturnCode>
+      <ReturnMessage>string</ReturnMessage>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <ListContactFieldsResponse 
+      xmlns="https://ws.campaigner.com/2013/01">
+      <ListContactFieldsResult>
+        <AttributeData>
+          <Id>int</Id>
+          <Name>string</Name>
+          <StaticAttributeId>int</StaticAttributeId>
+          <IsContactUniqueIdentifier>boolean</IsContactUniqueIdentifier>
+          <AttributeType>string</AttributeType>
+          <DataType>string</DataType>
+          <DateUpdated>dateTime</DateUpdated>
+          <DefaultValue>string</DefaultValue>
+          <FormField>xml</FormField>
+        </AttributeData>
+        <AttributeData>
+          <Id>int</Id>
+          <Name>string</Name>
+          <StaticAttributeId>int</StaticAttributeId>
+          <IsContactUniqueIdentifier>boolean</IsContactUniqueIdentifier>
+          <AttributeType>string</AttributeType>
+          <DataType>string</DataType>
+          <DateUpdated>dateTime</DateUpdated>
+          <DefaultValue>string</DefaultValue>
+          <FormField>xml</FormField>
+        </AttributeData>
+      </ListContactFieldsResult>
+    </ListContactFieldsResponse>
+  </soap:Body>
+</soap:Envelope>
