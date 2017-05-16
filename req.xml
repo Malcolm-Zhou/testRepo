@@ -1,31 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:Envelope 
-  xmlns="https://ws.campaigner.com/2013/01" 
-  xmlns:ns2="http://schemas.xmlsoap.org/soap/envelope/">
-  <ns2:Body>
-    <GetContactsResponse>
-      <authentication>
-        <Username>malcolm</Username>
-        <Password>123123</Password>
-      </authentication>
-      <contactFilter>
-        <ContactKeys>
-          <ContactKey>
-            <ContactId>1001</ContactId>
-            <ContactUniqueIdentifier>test identifier</ContactUniqueIdentifier>
-          </ContactKey>
-        </ContactKeys>
-      </contactFilter>
-      <contactInformationFilter>
-        <IncludeStaticAttributes>true</IncludeStaticAttributes>
-        <IncludeCustomAttributes>true</IncludeCustomAttributes>
-        <IncludeSystemAttributes>true</IncludeSystemAttributes>
-        <IncludeGroupMembershipData>true</IncludeGroupMembershipData>
-      </contactInformationFilter>
-    </GetContactsResponse>
-  </ns2:Body>
-</ns2:Envelope>
-
 <?xml version="1.0" encoding="utf-8"?>
 <soapenv:Envelope 
   xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
