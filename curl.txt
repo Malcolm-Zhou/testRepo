@@ -1,5 +1,5 @@
 /******EBOOKING******/
-curl -H "Content-Type: application/json" -X POST  --data '
+curl -H "Content-Type: application/json; charset=UTF-8" -X POST  --data '
 {
   "bookingClientSystem": {
     "clientCode": "PROXY_BOOKINGCLIENT_MYBCF"
@@ -26,7 +26,42 @@ curl -H "Content-Type: application/json" -X POST  --data '
   }
 }'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/listSailings/sailing
 
-curl -H "Content-Type: application/json" -X POST  --data '
+{
+  "BcfMessageHeader" : {
+    "MessageInstanceId" : "25ad70b5-97c6-4dc0-b5d2-3886ce0cf397",
+    "CreationDateTime" : "2017-05-28T23:46:43.347-07:00",
+    "MessageIdentification" : [ {
+      "MessageIdKey" : "MYBCF:N/A",
+      "MessageIdValue" : "N/A"
+    } ],
+    "MessageTracking" : [ {
+      "ServiceName" : "ProxyService$ListSailings$proxy$V1$ListSailingsRS",
+      "FirstEntryDateTime" : "2017-05-28T23:46:43.347-07:00",
+      "LastEntryDateTime" : "2017-05-28T23:46:43.347-07:00",
+      "EntryCount" : 1
+    } ]
+  },
+  "FaultNotification" : [ {
+    "FaultDateTime" : "2017-05-28T23:46:44.585-07:00",
+    "FaultedService" : "ProxyService$ListSailings$proxy$V1$ListSailingsRS",
+    "FaultCode" : "IBE5730",
+    "FaultText" : "No sailing found from port TSA to port SWB in the period from 150830-0000 to 150830-2359",
+    "Stack" : {
+      "fault" : {
+        "errorCode" : "IBE5730",
+        "reason" : "No sailing found from port TSA to port SWB in the period from 150830-0000 to 150830-2359",
+        "location" : {
+          "node" : "ListSailings",
+          "path" : "response-pipeline"
+        }
+      }
+    },
+    "FaultReported" : "N"
+  } ]
+}
+
+
+curl -H "Content-Type: application/json; charset=UTF-8" -X PUT  --data '
 {
   "bookingClientSystem" : {
     "clientCode" : "PROXY_BOOKINGCLIENT_MYBCF"
@@ -54,7 +89,51 @@ curl -H "Content-Type: application/json" -X POST  --data '
   }
 }'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/makeBooking/booking
 
-curl -H "Content-Type: application/json" -X POST  --data '
+{
+  "BcfMessageHeader" : {
+    "MessageInstanceId" : "356a8416-9388-413d-b5ac-f07306d9ac0b",
+    "CreationDateTime" : "2017-05-29T00:17:44.761-07:00",
+    "MessageIdentification" : [ {
+      "MessageIdKey" : "MYBCF:CustomerNumber",
+      "MessageIdValue" : null
+    }, {
+      "MessageIdKey" : "MYBCF:CustomerNumber",
+      "MessageIdValue" : null
+    } ],
+    "MessageTracking" : [ {
+      "ServiceName" : "ProxyService$MakeBookingQuotation$proxy$V1$MakeBookingQuotationLPS",
+      "FirstEntryDateTime" : "2017-05-29T00:17:44.955-07:00",
+      "LastEntryDateTime" : "2017-05-29T00:17:44.955-07:00",
+      "EntryCount" : 1
+    }, {
+      "ServiceName" : "ProxyService$MakeBooking$proxy$V1$MakeBookingRS",
+      "FirstEntryDateTime" : "2017-05-29T00:17:44.761-07:00",
+      "LastEntryDateTime" : "2017-05-29T00:17:44.761-07:00",
+      "EntryCount" : 1
+    } ]
+  },
+  "FaultNotification" : [ {
+    "FaultDateTime" : "2017-05-29T00:17:48.597-07:00",
+    "FaultedService" : "ProxyService$MakeBookingQuotation$proxy$V1$MakeBookingQuotationLPS",
+    "FaultCode" : "MSP0055",
+    "FaultText" : "No sailing found from port SWB to port TSA with departure date and time = 150901-1500",
+    "Stack" : {
+      "fault" : {
+        "errorCode" : "MSP0055",
+        "reason" : "No sailing found from port SWB to port TSA with departure date and time = 150901-1500",
+        "location" : {
+          "node" : "RouteToEBookingAndCoherence",
+          "path" : "response-pipeline"
+        }
+      }
+    },
+    "FaultReported" : "N"
+  } ]
+}
+
+
+
+curl -H "Content-Type: application/json; charset=UTF-8" -X PUT  --data '
 {
   "bookingClientSystem" : {
     "clientCode" : "PROXY_BOOKINGCLIENT_MYBCF"
@@ -103,7 +182,56 @@ curl -H "Content-Type: application/json" -X POST  --data '
   }
 }'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/confirmBookings/booking
 
-curl -H "Content-Type: application/json" -X POST  --data '
+
+{
+  "BcfMessageHeader" : {
+    "MessageInstanceId" : "139473d2-28c5-4b6c-8d3a-87aac0b4d565",
+    "CreationDateTime" : "2017-05-29T00:18:45.294-07:00",
+    "MessageIdentification" : [ {
+      "MessageIdKey" : "MYBCF:CustomerNumber",
+      "MessageIdValue" : null
+    }, {
+      "MessageIdKey" : "BCF:CoherenceKey",
+      "MessageIdValue" : "N/A"
+    } ],
+    "MessageTracking" : [ {
+      "ServiceName" : "ProxyService$CoherenceGateway$proxy$V1$GetBookingCoherenceLPS",
+      "FirstEntryDateTime" : "2017-05-29T00:18:45.304-07:00",
+      "LastEntryDateTime" : "2017-05-29T00:18:45.304-07:00",
+      "EntryCount" : 1
+    }, {
+      "ServiceName" : "ProxyService$ConfirmBookings$proxy$V1$ConfirmBookingsRS",
+      "FirstEntryDateTime" : "2017-05-29T00:18:45.294-07:00",
+      "LastEntryDateTime" : "2017-05-29T00:18:45.294-07:00",
+      "EntryCount" : 1
+    } ]
+  },
+  "FaultNotification" : [ {
+    "FaultDateTime" : "2017-05-29T00:18:45.343-07:00",
+    "FaultedService" : "ProxyService$ConfirmBookings$proxy$V1$ConfirmBookingsRS",
+    "FaultCode" : "BCF-0002",
+    "FaultText" : "Booking was not found in cache. ",
+    "Stack" : {
+      "fault" : {
+        "errorCode" : "BCF-0002",
+        "reason" : "Booking was not found in cache. ",
+        "location" : {
+          "node" : "PipelinePairNode1",
+          "pipeline" : "request-7f000001.N219021e7.0.14ff5547151.N7fd0",
+          "stage" : "RetrieveFromCacheStage",
+          "path" : "request-pipeline"
+        }
+      }
+    },
+    "FaultReported" : "N"
+  } ]
+}
+
+
+
+
+
+curl -H "Content-Type: application/json; charset=UTF-8" -X PUT  --data '
 {
   "bookingClientSystem" : {
     "clientCode" : "PROXY_BOOKINGCLIENT_MYBCF"
@@ -124,7 +252,40 @@ curl -H "Content-Type: application/json" -X POST  --data '
 }'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/cancelBooking/booking
 
 
-curl -H "Content-Type: application/json" -X POST  --data '
+{
+  "result" : [ {
+    "bookingReference" : {
+      "bookingReference" : "B150000058"
+    },
+    "result" : "FAILURE",
+    "error" : {
+      "errorCode" : "IBE0459",
+      "errorSummary" : "No booking found with reference B150000058"
+    }
+  }, {
+    "bookingReference" : {
+      "bookingReference" : "B150000062"
+    },
+    "result" : "FAILURE",
+    "error" : {
+      "errorCode" : "IBE0459",
+      "errorSummary" : "No booking found with reference B150000062"
+    }
+  }, {
+    "bookingReference" : {
+      "bookingReference" : "B150000040"
+    },
+    "result" : "FAILURE",
+    "error" : {
+      "errorCode" : "IBE0459",
+      "errorSummary" : "No booking found with reference B150000040"
+    }
+  } ]
+}
+
+
+
+curl -H "Content-Type: application/json; charset=UTF-8" -X PUT  --data '
 {
   "bookingClientSystem" : {
     "clientCode" : "PROXY_BOOKINGCLIENT_MYBCF"
@@ -134,7 +295,20 @@ curl -H "Content-Type: application/json" -X POST  --data '
   }]
 }'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/cancelBooking/booking
 
-curl -H "Content-Type: application/json" -X POST  --data '
+{
+  "result" : [ {
+    "bookingReference" : {
+      "cachingKey" : "0x00000155511597B60AFA01B8F4B7634A15C5598F496A4073C066EC54453DC566"
+    },
+    "result" : "SUCCESS"
+  } ]
+}
+
+
+
+
+
+curl -H "Content-Type: application/json; charset=UTF-8" -X POST  --data '
 {
   "bookingClientSystem" : {
     "clientCode" : "PROXY_BOOKINGCLIENT_MYBCF"
@@ -152,11 +326,17 @@ curl -H "Content-Type: application/json" -X POST  --data '
     } ]
   }
 }'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/searchBookings/booking
+
+{
+  "currentPageNumber" : 1,
+  "totalPageNumber" : 1,
+  "totalRecordNumber" : 0
+}
 /******EBOOKING******/
 
 
 /******CRM******/
-curl -H "Content-Type: application/json" -X POST  --data '
+curl -H "Content-Type: application/json; charset=UTF-8" -X POST  --data '
 {
   "BCF_Customer": {
     "PersonName": {
@@ -209,22 +389,39 @@ curl -H "Content-Type: application/json" -X POST  --data '
     ]
   }
 }'  http://vdclassoatst03.bcferries.corp:8007/customerservices/updateCustomer/customer
+
+
+{
+  "BCFCustomerNumber" : "10002848"
+}
 /******CRM******/
 
 /******CC******/
-curl -k https://kdcwdmzsvcprd01:7676/cc/tsa
-curl -k https://vdcwdmzsvcstg01:7676/cc/swb
-curl -k https://vdcwcsatst04.bcferries.corp:7878/cc/duk
-curl -k http://vdclffdeidev01:8080/cc/v2/tsa (confluence)
-curl -k https://vdcwcsatst03.bcferries.corp:7878/cc/tsa
+curl -k https://kdcwdmzsvcprd01:7676/cc/tsa work
+curl -k https://vdcwdmzsvcstg01:7676/cc/swb work
+curl -k https://vdcwcsatst04.bcferries.corp:7878/cc/duk work
+curl -k http://vdclffdeidev01:8080/cc/v2/tsa (confluence) work
+curl -k https://vdcwcsatst03.bcferries.corp:7878/cc/tsa   work
 /******CC******/
 
 /******PAYMENT******/
-curl -H "Content-Type: application/xml" -X POST  --data '
+curl -k -X POST -H "Content-Type: text/xml"   --data '
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://www.bcferries.com/apps/payment/service">
    <soapenv:Header/>
    <soapenv:Body>
       <ser:getVersionRequestElement/>
    </soapenv:Body>
 </soapenv:Envelope>'  https://paymentservice.sit.bcferries.corp:8181/PaymentService/PaymentServiceWs
+
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope 
+  xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Body>
+    <ns2:getVersionResponseElement 
+      xmlns="http://www.bcferries.com/apps/payment/types" 
+      xmlns:ns2="http://www.bcferries.com/apps/payment/service">
+      <version>1.2.20 build 599</version>
+    </ns2:getVersionResponseElement>
+  </S:Body>
+</S:Envelope>
 /******PAYMENT******/
