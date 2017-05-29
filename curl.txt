@@ -1,0 +1,230 @@
+/******EBOOKING******/
+curl -H "Content-Type: application/json" -X POST  --data '
+{
+  "bookingClientSystem": {
+    "clientCode": "PROXY_BOOKINGCLIENT_MYBCF"
+  },
+  "products": {
+    "product": [
+      {
+        "productId": "AD",
+        "productNumber": 1,
+        "productCategory": "PASSENGER"
+      },
+      {
+        "productId": "UH",
+        "productNumber": 1,
+        "productLength": 2000,
+        "productCategory": "VEHICLE"
+      }
+    ]
+  },
+  "sailingEvent": {
+    "departurePortCode": "TSA",
+    "arrivalPortCode": "SWB",
+    "departureDateTime": "2015-08-30T00:00:00"
+  }
+}'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/listSailings/sailing
+
+curl -H "Content-Type: application/json" -X POST  --data '
+{
+  "bookingClientSystem" : {
+    "clientCode" : "PROXY_BOOKINGCLIENT_MYBCF"
+  },
+  "bookingType" : {
+    "bookingType" : "QUOTATION"
+  },
+  "products" : {
+    "product" : [ {
+      "productId" : "AD",
+      "productNumber" : 1,
+      "productCategory" : "PASSENGER"
+    },
+{
+      "productId" : "UH",
+      "productNumber" : 1,
+      "productLength" : 300,
+      "productCategory" : "VEHICLE"
+    }  ]
+  },
+  "sailingEvent" : {
+    "departurePortCode" : "SWB",
+    "arrivalPortCode" : "TSA",
+    "departureDateTime" : "2015-09-01T15:00:00"
+  }
+}'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/makeBooking/booking
+
+curl -H "Content-Type: application/json" -X POST  --data '
+{
+  "bookingClientSystem" : {
+    "clientCode" : "PROXY_BOOKINGCLIENT_MYBCF"
+  },
+  "bookingType" : {
+    "bookingType" : "QUOTATION"
+  },
+  "customerInfo" : {
+    "firstName" : "Good",
+    "lastName" : "Guy",
+    "phone" : "2501111111",
+    "emailAddress" : "good.guy@bcferries.com"
+  },
+  "tempBookingReferences" : [ {
+    "cachingKey" : "458900b316dae41a:2e4b8f5b:14ec124749d:-7e51"
+  },
+{
+    "cachingKey" : "458900b316dae41a:2e4b8f5b:14ec124749d:-7e50"
+  }  ],
+  "paymentInfo" : {
+    "totalAmountInCents" : 3000,
+    "cardInfo" : [ {
+      "index" : 1,
+      "cardName" : "CC",
+      "temporaryToken" : "temptokenfrommoneries123",
+      "cardExpiry" : "072018",
+      "cardSecurityCode" : "111"
+    } ],
+    "paymentDistributions" : [ {
+      "bookingReference" : {
+        "cachingKey" : "458900b316dae41a:2e4b8f5b:14ec124749d:-7e51"      },
+      "amountInCents" : 1500,
+      "cardIndex" : 1
+    },
+{
+      "bookingReference" : {
+        "cachingKey" : "458900b316dae41a:2e4b8f5b:14ec124749d:-7e50"      },
+      "amountInCents" : 1500,
+      "cardIndex" : 1
+    } ],
+    "paymentTransactions" : [ {
+      "cardIndex" : 1,
+      "transactionAmountInCents" : 3000,
+      "isDeferredPayment" : false
+    } ]
+  }
+}'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/confirmBookings/booking
+
+curl -H "Content-Type: application/json" -X POST  --data '
+{
+  "bookingClientSystem" : {
+    "clientCode" : "PROXY_BOOKINGCLIENT_MYBCF"
+  },
+  "customerInfo" : {
+    "customerNumber" : "759953",
+    "notes" : "$$$James Bond$$$ cancelled the booking"
+  },
+  "bookingReferences" : [ {
+    "bookingReference" : "B150000040"
+  },
+{
+    "bookingReference" : "B150000062"
+  },
+{
+    "bookingReference" : "B150000058"
+  } ]
+}'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/cancelBooking/booking
+
+
+curl -H "Content-Type: application/json" -X POST  --data '
+{
+  "bookingClientSystem" : {
+    "clientCode" : "PROXY_BOOKINGCLIENT_MYBCF"
+  },
+  "bookingReferences" : [ {
+    "cachingKey" : "0x00000155511597B60AFA01B8F4B7634A15C5598F496A4073C066EC54453DC566"
+  }]
+}'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/cancelBooking/booking
+
+curl -H "Content-Type: application/json" -X POST  --data '
+{
+  "bookingClientSystem" : {
+    "clientCode" : "PROXY_BOOKINGCLIENT_MYBCF"
+  },
+  "customerInfo" : {
+    "customerNumber" : "1"
+  },
+  "searchCriteria" : {
+    "currentPageNumber" : 1,
+    "departureDateTimeFrom" : "2017-09-28T11:22:11",
+    "departureDateTimeTo" : "2117-09-18TT11:22:11",
+    "routes" : [ {
+      "departurePortCode" : "TSA",
+      "arrivalPortCode" : "SWB"
+    } ]
+  }
+}'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/searchBookings/booking
+/******EBOOKING******/
+
+
+/******CRM******/
+curl -H "Content-Type: application/json" -X POST  --data '
+{
+  "BCF_Customer": {
+    "PersonName": {
+      "GivenName": "George",
+      "Surname": "Bushly"
+    },
+    "Address": [
+      {
+        "PostalCode": "V9A2J1",
+        "AddressUse": "Mailing",
+        "PrimaryInd": true,
+        "CountryCode": "CA",
+        "ProvinceStateCode": "BC",
+        "AddressLine1": "517 Elm St",
+        "City": "Comox",
+        "AddressLine2": "Apt 23"
+      }
+    ],
+    "EmailAddress": [
+      {
+        "EmailUse": "Personal",
+        "PrimaryInd": true,
+        "EmailAddress": "devaceps2216@example.com"
+      }
+    ],
+    "PhoneNumber": [
+      {
+        "PrimaryInd": true,
+        "PhoneUse": "Personal",
+        "PhoneTechnology": "Voice",
+        "PhoneNumber": "2223335454"
+      },
+      {
+        "PrimaryInd": false,
+        "PhoneUse": "Mobile",
+        "PhoneTechnology": "Voice",
+        "PhoneNumber": "3334447777"
+      }
+    ],
+    "CustomerStatus": {
+      "Status": "Active"
+    },
+    "GuestInd": false,
+    "SystemIdentifier": [
+      {
+        "OptimisticLock_ID": "",
+        "ID": "762606",
+        "SourceSystem": "MYBCF"
+      }
+    ]
+  }
+}'  http://vdclassoatst03.bcferries.corp:8007/customerservices/updateCustomer/customer
+/******CRM******/
+
+/******CC******/
+curl -k https://kdcwdmzsvcprd01:7676/cc/tsa
+curl -k https://vdcwdmzsvcstg01:7676/cc/swb
+curl -k https://vdcwcsatst04.bcferries.corp:7878/cc/duk
+curl -k http://vdclffdeidev01:8080/cc/v2/tsa (confluence)
+curl -k https://vdcwcsatst03.bcferries.corp:7878/cc/tsa
+/******CC******/
+
+/******PAYMENT******/
+curl -H "Content-Type: application/xml" -X POST  --data '
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://www.bcferries.com/apps/payment/service">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:getVersionRequestElement/>
+   </soapenv:Body>
+</soapenv:Envelope>'  https://paymentservice.sit.bcferries.corp:8181/PaymentService/PaymentServiceWs
+/******PAYMENT******/

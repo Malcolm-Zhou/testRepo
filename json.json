@@ -1,0 +1,534 @@
+{
+    "searchResult": [{
+        "sailing": {
+            "line": [{
+                "index": 1,
+                "departurePortCode": "PWR",
+                "arrivalPortCode": "CMX",
+                "departureDateTime": "2014-12-22T08:10:00",
+                "arrivalDateTime": "2014-12-22T09:30:00",
+                "vesselCode": "QUEEN_OF_BURNABY"
+            }]
+        },
+        "booking": {
+            "bookingReference": {
+                "bookingReference": "B150000003"
+            },
+            "productFares": [{
+                "productId": "AD",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 1490,
+                "productCategory": "PASSENGER"
+            }, {
+                "productId": "MC",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 2417,
+                "productCategory": "VEHICLE"
+            }, {
+                "productId": "RESERVATION_FEE_22",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 1850,
+                "productCategory": "OTHER"
+            }],
+            "totalFaresInCents": 5809,
+            "minimumToPayNowInCents": null,
+            "paidFaresInCents": null,
+            "isWaitListed": null,
+            "isDeferredPayment": null,
+            "customerInfo": {
+                "customerNumber": null,
+                "firstName": null,
+                "lastName": null,
+                "phone": null,
+                "emailAddress": null,
+                "extraEmailAddress": [null]
+            }
+        }
+    }, {
+        "sailing": {
+            "line": [{
+                "index": 1,
+                "departurePortCode": "TSA",
+                "arrivalPortCode": "SWB",
+                "departureDateTime": "2015-07-30T07:00:00",
+                "arrivalDateTime": "2015-07-30T08:35:00",
+                "vesselCode": "SPIRIT_OF_VR_IS"
+            }]
+        },
+        "booking": {
+            "bookingReference": {
+                "bookingReference": "B150000035"
+            },
+            "productFares": [{
+                "productId": "CH",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 815,
+                "productCategory": "PASSENGER"
+            }, {
+                "productId": "AD",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 1625,
+                "productCategory": "PASSENGER"
+            }, {
+                "productId": "UH",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 5272,
+                "productCategory": "VEHICLE"
+            }, {
+                "productId": "RPR_MR_LT1D_UH_OS",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 2200,
+                "productCategory": "OTHER"
+            }],
+            "totalFaresInCents": 9888,
+            "minimumToPayNowInCents": null,
+            "paidFaresInCents": null,
+            "isWaitListed": null,
+            "isDeferredPayment": null,
+            "customerInfo": {
+                "customerNumber": null,
+                "firstName": null,
+                "lastName": null,
+                "phone": null,
+                "emailAddress": null,
+                "extraEmailAddress": [
+                    null
+                ]
+            }
+        }
+    }, {
+        "sailing": {
+            "line": [{
+                "index": 1,
+                "departurePortCode": "TSA",
+                "arrivalPortCode": "SWB",
+                "departureDateTime": "2015-07-30T07:00:00",
+                "arrivalDateTime": "2015-07-30T08:35:00",
+                "vesselCode": "SPIRIT_OF_VR_IS"
+            }]
+        },
+        "booking": {
+            "bookingReference": {
+                "bookingReference": "B150000036"
+            },
+            "productFares": [{
+                "productId": "CH",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 815,
+                "productCategory": "PASSENGER"
+            }, {
+                "productId": "AD",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 1625,
+                "productCategory": "PASSENGER"
+            }, {
+                "productId": "UH",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 5272,
+                "productCategory": "VEHICLE"
+            }, {
+                "productId": "RPR_MR_LT1D_UH_OS",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 2200,
+                "productCategory": "OTHER"
+            }],
+            "totalFaresInCents": 9888,
+            "minimumToPayNowInCents": null,
+            "paidFaresInCents": null,
+            "isWaitListed": null,
+            "isDeferredPayment": null,
+            "customerInfo": {
+                "customerNumber": null,
+                "firstName": null,
+                "lastName": null,
+                "phone": null,
+                "emailAddress": null,
+                "extraEmailAddress": [
+                    null
+                ]
+            }
+        }
+    }, {
+        "sailing": {
+            "line": [{
+                "index": 1,
+                "departurePortCode": "TSA",
+                "arrivalPortCode": "SWB",
+                "departureDateTime": "2015-07-30T07:00:00",
+                "arrivalDateTime": "2015-07-30T08:35:00",
+                "vesselCode": "SPIRIT_OF_VR_IS"
+            }]
+        },
+        "booking": {
+            "bookingReference": {
+                "bookingReference": "B150000037"
+            },
+            "productFares": [{
+                "productId": "AD",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 1625,
+                "productCategory": "PASSENGER"
+            }, {
+                "productId": "CH",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 815,
+                "productCategory": "PASSENGER"
+            }, {
+                "productId": "UH",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 5272,
+                "productCategory": "VEHICLE"
+            }, {
+                "productId": "RPR_MR_LT1D_UH_OS",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 2200,
+                "productCategory": "OTHER"
+            }],
+            "totalFaresInCents": 9888,
+            "minimumToPayNowInCents": null,
+            "paidFaresInCents": null,
+            "isWaitListed": null,
+            "isDeferredPayment": null,
+            "customerInfo": {
+                "customerNumber": null,
+                "firstName": null,
+                "lastName": null,
+                "phone": null,
+                "emailAddress": null,
+                "extraEmailAddress": [
+                    null
+                ]
+            }
+        }
+    }, {
+        "sailing": {
+            "line": [{
+                "index": 1,
+                "departurePortCode": "SWB",
+                "arrivalPortCode": "TSA",
+                "departureDateTime": "2014-10-03T09:00:00",
+                "arrivalDateTime": "2014-10-03T10:35:00",
+                "vesselCode": "SPIRIT_OF_BC"
+            }]
+        },
+        "booking": {
+            "bookingReference": {
+                "bookingReference": "B140000001"
+            },
+            "productFares": [{
+                "productId": "AD",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 1625,
+                "productCategory": "PASSENGER"
+            }, {
+                "productId": "UH",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 5325,
+                "productCategory": "VEHICLE"
+            }, {
+                "productId": "RESERVATION_FEE_22",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 2200,
+                "productCategory": "OTHER"
+            }],
+            "totalFaresInCents": 11107,
+            "minimumToPayNowInCents": null,
+            "paidFaresInCents": null,
+            "isWaitListed": null,
+            "isDeferredPayment": null,
+            "customerInfo": {
+                "customerNumber": null,
+                "firstName": null,
+                "lastName": null,
+                "phone": null,
+                "emailAddress": null,
+                "extraEmailAddress": [null]
+            }
+        }
+    }, {
+        "sailing": {
+            "line": [{
+                "index": 1,
+                "departurePortCode": "TSA",
+                "arrivalPortCode": "SWB",
+                "departureDateTime": "2015-07-30T07:00:00",
+                "arrivalDateTime": "2015-07-30T08:35:00",
+                "vesselCode": "SPIRIT_OF_VR_IS"
+            }]
+        },
+        "booking": {
+            "bookingReference": {
+                "bookingReference": "B150000031"
+            },
+            "productFares": [{
+                "productId": "CH",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 815,
+                "productCategory": "PASSENGER"
+            }, {
+                "productId": "AD",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 1625,
+                "productCategory": "PASSENGER"
+            }, {
+                "productId": "UH",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 5272,
+                "productCategory": "VEHICLE"
+            }],
+            "totalFaresInCents": 7688,
+            "minimumToPayNowInCents": null,
+            "paidFaresInCents": null,
+            "isWaitListed": null,
+            "isDeferredPayment": null,
+            "customerInfo": {
+                "customerNumber": null,
+                "firstName": null,
+                "lastName": null,
+                "phone": null,
+                "emailAddress": null,
+                "extraEmailAddress": [null]
+            }
+        }
+    }, {
+        "sailing": {
+            "line": [{
+                "index": 1,
+                "departurePortCode": "TSA",
+                "arrivalPortCode": "SWB",
+                "departureDateTime": "2015-07-30T07:00:00",
+                "arrivalDateTime": "2015-07-30T08:35:00",
+                "vesselCode": "SPIRIT_OF_VR_IS"
+            }]
+        },
+        "booking": {
+            "bookingReference": {
+                "bookingReference": "B150000033"
+            },
+            "productFares": [{
+                "productId": "CH",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 815,
+                "productCategory": "PASSENGER"
+            }, {
+                "productId": "AD",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 1625,
+                "productCategory": "PASSENGER"
+            }, {
+                "productId": "UH",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 5272,
+                "productCategory": "VEHICLE"
+            }, {
+                "productId": "RPR_MR_LT1D_UH_OS",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 2200,
+                "productCategory": "OTHER"
+            }],
+            "totalFaresInCents": 9888,
+            "minimumToPayNowInCents": null,
+            "paidFaresInCents": null,
+            "isWaitListed": null,
+            "isDeferredPayment": null,
+            "customerInfo": {
+                "customerNumber": null,
+                "firstName": null,
+                "lastName": null,
+                "phone": null,
+                "emailAddress": null,
+                "extraEmailAddress": [
+                    null
+                ]
+            }
+        }
+    }, {
+        "sailing": {
+            "line": [{
+                "index": 1,
+                "departurePortCode": "TSA",
+                "arrivalPortCode": "SWB",
+                "departureDateTime": "2015-07-30T07:00:00",
+                "arrivalDateTime": "2015-07-30T08:35:00",
+                "vesselCode": "SPIRIT_OF_VR_IS"
+            }]
+        },
+        "booking": {
+            "bookingReference": {
+                "bookingReference": "B150000034"
+            },
+            "productFares": [{
+                "productId": "AD",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 1625,
+                "productCategory": "PASSENGER"
+            }, {
+                "productId": "CH",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 815,
+                "productCategory": "PASSENGER"
+            }, {
+                "productId": "UH",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 5272,
+                "productCategory": "VEHICLE"
+            }, {
+                "productId": "RPR_MR_LT1D_UH_OS",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 2200,
+                "productCategory": "OTHER"
+            }],
+            "totalFaresInCents": 9888,
+            "minimumToPayNowInCents": null,
+            "paidFaresInCents": null,
+            "isWaitListed": null,
+            "isDeferredPayment": null,
+            "customerInfo": {
+                "customerNumber": null,
+                "firstName": null,
+                "lastName": null,
+                "phone": null,
+                "emailAddress": null,
+                "extraEmailAddress": [
+                    null
+                ]
+            }
+        }
+    }, {
+        "sailing": {
+            "line": [{
+                "index": 1,
+                "departurePortCode": "SWB",
+                "arrivalPortCode": "TSA",
+                "departureDateTime": "2014-10-03T09:00:00",
+                "arrivalDateTime": "2014-10-03T10:35:00",
+                "vesselCode": "SPIRIT_OF_BC"
+            }]
+        },
+        "booking": {
+            "bookingReference": {
+                "bookingReference": "B140000003"
+            },
+            "productFares": [{
+                "productId": "AD",
+                "productNumber": 3,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 4875,
+                "productCategory": "PASSENGER"
+            }, {
+                "productId": "UH",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 5325,
+                "productCategory": "VEHICLE"
+            }, {
+                "productId": "MC",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 2665,
+                "productCategory": "VEHICLE"
+            }, {
+                "productId": "MC",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 2665,
+                "productCategory": "VEHICLE"
+            }],
+            "totalFaresInCents": 15530,
+            "minimumToPayNowInCents": null,
+            "paidFaresInCents": null,
+            "isWaitListed": null,
+            "isDeferredPayment": null,
+            "customerInfo": {
+                "customerNumber": null,
+                "firstName": null,
+                "lastName": null,
+                "phone": null,
+                "emailAddress": null,
+                "extraEmailAddress": [
+                    null
+                ]
+            }
+        }
+    }, {
+        "sailing": {
+            "line": [{
+                "index": 1,
+                "departurePortCode": "TSA",
+                "arrivalPortCode": "SWB",
+                "departureDateTime": "2015-07-30T07:00:00",
+                "arrivalDateTime": "2015-07-30T08:35:00",
+                "vesselCode": "SPIRIT_OF_VR_IS"
+            }]
+        },
+        "booking": {
+            "bookingReference": {
+                "bookingReference": "B150000030"
+            },
+            "productFares": [{
+                "productId": "CH",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 815,
+                "productCategory": "PASSENGER"
+            }, {
+                "productId": "AD",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 1625,
+                "productCategory": "PASSENGER"
+            }, {
+                "productId": "UH",
+                "productNumber": 1,
+                "netProductFareInCents": null,
+                "totalProductFareInCents": 5272,
+                "productCategory": "VEHICLE"
+            }],
+            "totalFaresInCents": 7688,
+            "minimumToPayNowInCents": null,
+            "paidFaresInCents": null,
+            "isWaitListed": null,
+            "isDeferredPayment": null,
+            "customerInfo": {
+                "customerNumber": null,
+                "firstName": null,
+                "lastName": null,
+                "phone": null,
+                "emailAddress": null,
+                "extraEmailAddress": [null]
+            }
+        }
+    }],
+    "currentPageNumber": 1,
+    "totalPageNumber": 1,
+    "totalRecordNumber": 10
+}

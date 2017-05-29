@@ -2,43 +2,19 @@
 
 <head></head>
 
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script>
-    var str = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-    <GetContacts 
-  xmlns="https://ws.campaigner.com/2013/01">
-  <authentication>
-    <Username>malcolm</Username>
-    <Password>123123</Password>
-  </authentication>
-  <contactFilter>
-    <ContactKeys>
-      <ContactKey>
-        <ContactId>1001</ContactId>
-        <ContactUniqueIdentifier>test identifier</ContactUniqueIdentifier>
-      </ContactKey>
-    </ContactKeys>
-  </contactFilter>
-  <contactInformationFilter>
-    <IncludeStaticAttributes>true</IncludeStaticAttributes>
-    <IncludeCustomAttributes>true</IncludeCustomAttributes>
-    <IncludeSystemAttributes>true</IncludeSystemAttributes>
-    <IncludeGroupMembershipData>true</IncludeGroupMembershipData>
-  </contactInformationFilter>
-</GetContacts>`;
-    var sub = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>`;
-    var head = `<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-  <soap:Body>`;
-    var foot = `</soap:Body>
-</soap:Envelope>`;
-    let length = sub.length;
-    console.log(length);
-    var middle = str.substring(length, str.length);
-    console.log(sub + head + middle + foot);
+    console.log($("#abc"));
+    console.log($("#abc").val());
+    var href = $("#abc").attr('href');
+    console.log(href);
+    setTimeout(function() {
+        CreateUpdateCampaignPopulator
+    }, 1000)
 </script>
 
 <body style="width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #222222; font-family: 'Helvetica','Arial',sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0; padding: 0;">
-    <a href=""><img height="100%" width="100%" src="" /></a>
+    <a id="abc" href="http://www.baidu.com">adwefsefws</a>
 </body>
 
 </html>
