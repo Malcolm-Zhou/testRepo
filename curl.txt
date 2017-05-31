@@ -20,45 +20,137 @@ curl -H "Content-Type: application/json; charset=UTF-8" -X POST  --data '
     ]
   },
   "sailingEvent": {
-    "departurePortCode": "TSA",
-    "arrivalPortCode": "SWB",
-    "departureDateTime": "2015-08-30T00:00:00"
+    "departurePortCode": "SWB",
+    "arrivalPortCode": "TSA",
+    "departureDateTime": "2017-03-30T00:00:00"
   }
-}'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/listSailings/sailing
+}'  http://vdclassoatst02.bcferries.corp:8007/bookingservices/listSailings/sailing
 
 {
-  "BcfMessageHeader" : {
-    "MessageInstanceId" : "25ad70b5-97c6-4dc0-b5d2-3886ce0cf397",
-    "CreationDateTime" : "2017-05-28T23:46:43.347-07:00",
-    "MessageIdentification" : [ {
-      "MessageIdKey" : "MYBCF:N/A",
-      "MessageIdValue" : "N/A"
-    } ],
-    "MessageTracking" : [ {
-      "ServiceName" : "ProxyService$ListSailings$proxy$V1$ListSailingsRS",
-      "FirstEntryDateTime" : "2017-05-28T23:46:43.347-07:00",
-      "LastEntryDateTime" : "2017-05-28T23:46:43.347-07:00",
-      "EntryCount" : 1
-    } ]
-  },
-  "FaultNotification" : [ {
-    "FaultDateTime" : "2017-05-28T23:46:44.585-07:00",
-    "FaultedService" : "ProxyService$ListSailings$proxy$V1$ListSailingsRS",
-    "FaultCode" : "IBE5730",
-    "FaultText" : "No sailing found from port TSA to port SWB in the period from 150830-0000 to 150830-2359",
-    "Stack" : {
-      "fault" : {
-        "errorCode" : "IBE5730",
-        "reason" : "No sailing found from port TSA to port SWB in the period from 150830-0000 to 150830-2359",
-        "location" : {
-          "node" : "ListSailings",
-          "path" : "response-pipeline"
+  "sailing": [
+    {
+      "line": [
+        {
+          "index": 1,
+          "departurePortCode": "SWB",
+          "arrivalPortCode": "TSA",
+          "departureDateTime": "2017-03-30T07:00:00",
+          "arrivalDateTime": "2017-03-30T08:35:00",
+          "vesselCode": "SPIRIT_OF_VR_IS",
+          "isBookable": false
         }
-      }
+      ]
     },
-    "FaultReported" : "N"
-  } ]
+    {
+      "line": [
+        {
+          "index": 1,
+          "departurePortCode": "SWB",
+          "arrivalPortCode": "TSA",
+          "departureDateTime": "2017-03-30T09:00:00",
+          "arrivalDateTime": "2017-03-30T10:35:00",
+          "vesselCode": "SPIRIT_OF_BC",
+          "isBookable": false
+        }
+      ]
+    },
+    {
+      "line": [
+        {
+          "index": 1,
+          "departurePortCode": "SWB",
+          "arrivalPortCode": "TSA",
+          "departureDateTime": "2017-03-30T11:00:00",
+          "arrivalDateTime": "2017-03-30T12:35:00",
+          "vesselCode": "SPIRIT_OF_VR_IS",
+          "isBookable": false
+        }
+      ]
+    },
+    {
+      "line": [
+        {
+          "index": 1,
+          "departurePortCode": "SWB",
+          "arrivalPortCode": "TSA",
+          "departureDateTime": "2017-03-30T13:00:00",
+          "arrivalDateTime": "2017-03-30T14:35:00",
+          "vesselCode": "SPIRIT_OF_BC",
+          "isBookable": false
+        }
+      ]
+    },
+    {
+      "line": [
+        {
+          "index": 1,
+          "departurePortCode": "SWB",
+          "arrivalPortCode": "TSA",
+          "departureDateTime": "2017-03-30T15:00:00",
+          "arrivalDateTime": "2017-03-30T16:35:00",
+          "vesselCode": "SPIRIT_OF_VR_IS",
+          "isBookable": false
+        }
+      ]
+    },
+    {
+      "line": [
+        {
+          "index": 1,
+          "departurePortCode": "SWB",
+          "arrivalPortCode": "TSA",
+          "departureDateTime": "2017-03-30T16:00:00",
+          "arrivalDateTime": "2017-03-30T17:35:00",
+          "vesselCode": "COASTAL_RENAISSANCE",
+          "isBookable": false
+        }
+      ]
+    },
+    {
+      "line": [
+        {
+          "index": 1,
+          "departurePortCode": "SWB",
+          "arrivalPortCode": "TSA",
+          "departureDateTime": "2017-03-30T17:00:00",
+          "arrivalDateTime": "2017-03-30T18:35:00",
+          "vesselCode": "SPIRIT_OF_BC",
+          "isBookable": false
+        }
+      ]
+    },
+    {
+      "line": [
+        {
+          "index": 1,
+          "departurePortCode": "SWB",
+          "arrivalPortCode": "TSA",
+          "departureDateTime": "2017-03-30T19:00:00",
+          "arrivalDateTime": "2017-03-30T20:35:00",
+          "vesselCode": "SPIRIT_OF_VR_IS",
+          "isBookable": false
+        }
+      ]
+    },
+    {
+      "line": [
+        {
+          "index": 1,
+          "departurePortCode": "SWB",
+          "arrivalPortCode": "TSA",
+          "departureDateTime": "2017-03-30T21:00:00",
+          "arrivalDateTime": "2017-03-30T22:35:00",
+          "vesselCode": "SPIRIT_OF_BC",
+          "isBookable": false
+        }
+      ]
+    }
+  ]
 }
+
+
+
+
 
 
 curl -H "Content-Type: application/json; charset=UTF-8" -X PUT  --data '
@@ -75,7 +167,7 @@ curl -H "Content-Type: application/json; charset=UTF-8" -X PUT  --data '
       "productNumber" : 1,
       "productCategory" : "PASSENGER"
     },
-{
+    {
       "productId" : "UH",
       "productNumber" : 1,
       "productLength" : 300,
@@ -85,14 +177,14 @@ curl -H "Content-Type: application/json; charset=UTF-8" -X PUT  --data '
   "sailingEvent" : {
     "departurePortCode" : "SWB",
     "arrivalPortCode" : "TSA",
-    "departureDateTime" : "2015-09-01T15:00:00"
+    "departureDateTime" : "2017-09-30T15:00:00"
   }
-}'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/makeBooking/booking
+}'  http://vdclassoatst02.bcferries.corp:8007/bookingservices/makeBooking/booking
 
 {
   "BcfMessageHeader" : {
-    "MessageInstanceId" : "356a8416-9388-413d-b5ac-f07306d9ac0b",
-    "CreationDateTime" : "2017-05-29T00:17:44.761-07:00",
+    "MessageInstanceId" : "caca79bd-00cd-48c2-ae15-4df4b28b843f",
+    "CreationDateTime" : "2017-05-30T19:25:06.695-07:00",
     "MessageIdentification" : [ {
       "MessageIdKey" : "MYBCF:CustomerNumber",
       "MessageIdValue" : null
@@ -102,25 +194,25 @@ curl -H "Content-Type: application/json; charset=UTF-8" -X PUT  --data '
     } ],
     "MessageTracking" : [ {
       "ServiceName" : "ProxyService$MakeBookingQuotation$proxy$V1$MakeBookingQuotationLPS",
-      "FirstEntryDateTime" : "2017-05-29T00:17:44.955-07:00",
-      "LastEntryDateTime" : "2017-05-29T00:17:44.955-07:00",
+      "FirstEntryDateTime" : "2017-05-30T19:25:06.731-07:00",
+      "LastEntryDateTime" : "2017-05-30T19:25:06.731-07:00",
       "EntryCount" : 1
     }, {
       "ServiceName" : "ProxyService$MakeBooking$proxy$V1$MakeBookingRS",
-      "FirstEntryDateTime" : "2017-05-29T00:17:44.761-07:00",
-      "LastEntryDateTime" : "2017-05-29T00:17:44.761-07:00",
+      "FirstEntryDateTime" : "2017-05-30T19:25:06.695-07:00",
+      "LastEntryDateTime" : "2017-05-30T19:25:06.695-07:00",
       "EntryCount" : 1
     } ]
   },
   "FaultNotification" : [ {
-    "FaultDateTime" : "2017-05-29T00:17:48.597-07:00",
+    "FaultDateTime" : "2017-05-30T19:25:07.175-07:00",
     "FaultedService" : "ProxyService$MakeBookingQuotation$proxy$V1$MakeBookingQuotationLPS",
     "FaultCode" : "MSP0055",
-    "FaultText" : "No sailing found from port SWB to port TSA with departure date and time = 150901-1500",
+    "FaultText" : "No sailing found from port SWB to port TSA with departure date and time = 170930-1500",
     "Stack" : {
       "fault" : {
         "errorCode" : "MSP0055",
-        "reason" : "No sailing found from port SWB to port TSA with departure date and time = 150901-1500",
+        "reason" : "No sailing found from port SWB to port TSA with departure date and time = 170930-1500",
         "location" : {
           "node" : "RouteToEBookingAndCoherence",
           "path" : "response-pipeline"
@@ -180,7 +272,7 @@ curl -H "Content-Type: application/json; charset=UTF-8" -X PUT  --data '
       "isDeferredPayment" : false
     } ]
   }
-}'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/confirmBookings/booking
+}'  http://vdclassoatst02.bcferries.corp:8007/bookingservices/confirmBookings/booking
 
 
 {
@@ -249,7 +341,7 @@ curl -H "Content-Type: application/json; charset=UTF-8" -X PUT  --data '
 {
     "bookingReference" : "B150000058"
   } ]
-}'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/cancelBooking/booking
+}'  http://vdclassoatst02.bcferries.corp:8007/bookingservices/cancelBooking/booking
 
 
 {
@@ -293,7 +385,7 @@ curl -H "Content-Type: application/json; charset=UTF-8" -X PUT  --data '
   "bookingReferences" : [ {
     "cachingKey" : "0x00000155511597B60AFA01B8F4B7634A15C5598F496A4073C066EC54453DC566"
   }]
-}'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/cancelBooking/booking
+}'  http://vdclassoatst02.bcferries.corp:8007/bookingservices/cancelBooking/booking
 
 {
   "result" : [ {
@@ -318,14 +410,57 @@ curl -H "Content-Type: application/json; charset=UTF-8" -X POST  --data '
   },
   "searchCriteria" : {
     "currentPageNumber" : 1,
-    "departureDateTimeFrom" : "2017-09-28T11:22:11",
-    "departureDateTimeTo" : "2117-09-18TT11:22:11",
+    "departureDateTimeFrom" : "2017-01-10T00:00:00",
+    "departureDateTimeTo" : "2017-04-30TT00:0000",
     "routes" : [ {
       "departurePortCode" : "TSA",
       "arrivalPortCode" : "SWB"
     } ]
   }
-}'  http://vdclassoatst03.bcferries.corp:8007/bookingservices/searchBookings/booking
+}'  http://vdclassoatst02.bcferries.corp:8007/bookingservices/searchBookings/booking
+
+
+{
+  "BcfMessageHeader" : {
+    "MessageInstanceId" : "567586c1-307b-43d2-b314-9ea65f954735",
+    "CreationDateTime" : "2017-05-30T19:16:12.685-07:00",
+    "MessageIdentification" : [ {
+      "MessageIdKey" : "MYBCF:N/A",
+      "MessageIdValue" : "N/A"
+    }, {
+      "MessageIdKey" : "CUSTOMER:ID",
+      "MessageIdValue" : "1"
+    } ],
+    "MessageTracking" : [ {
+      "ServiceName" : "ProxyService$GetCustomer$proxy$V1$GetCustomerLPS",
+      "FirstEntryDateTime" : "2017-05-30T19:16:12.904-07:00",
+      "LastEntryDateTime" : "2017-05-30T19:16:12.904-07:00",
+      "EntryCount" : 1
+    }, {
+      "ServiceName" : "ProxyService$SearchBookings$proxy$V1$SearchBookingsRS",
+      "FirstEntryDateTime" : "2017-05-30T19:16:12.685-07:00",
+      "LastEntryDateTime" : "2017-05-30T19:16:12.685-07:00",
+      "EntryCount" : 1
+    } ]
+  },
+  "FaultNotification" : [ {
+    "FaultDateTime" : "2017-05-30T19:16:42.978-07:00",
+    "FaultedService" : "ProxyService$GetCustomer$proxy$V1$GetCustomerLPS",
+    "FaultCode" : "OSB-381501",
+    "FaultText" : "JmsAsyncMessageTable timed out message with id ID:<908255.1496196972952.0>",
+    "Stack" : {
+      "fault" : {
+        "errorCode" : "OSB-381501",
+        "reason" : "JmsAsyncMessageTable timed out message with id ID:<908255.1496196972952.0>",
+        "location" : {
+          "node" : "RouteToCRMCustomer",
+          "path" : "response-pipeline"
+        }
+      }
+    },
+    "FaultReported" : "N"
+  } ]
+}
 
 {
   "currentPageNumber" : 1,
@@ -388,7 +523,7 @@ curl -H "Content-Type: application/json; charset=UTF-8" -X POST  --data '
       }
     ]
   }
-}'  http://vdclassoatst03.bcferries.corp:8007/customerservices/updateCustomer/customer
+}'  http://vdclassoatst02.bcferries.corp:8007/customerservices/updateCustomer/customer
 
 
 {
