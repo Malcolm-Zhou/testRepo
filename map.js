@@ -11,6 +11,7 @@ const menuItems = [{
     text: 'NET PROMOTER SCORE',
     path: ['/perform/huddle/netPromoterScore', '/perform/huddle/netPromoterScore2', '/perform/huddle/netPromoterScore3', '/perform/huddle/netPromoterScore4', '/perform/huddle/netPromoterScore5', '/perform/huddle/netPromoterScore6', '/perform/huddle/netPromoterScore7'],
 }]
+
 let array = [];
 for (let item of menuItems) {
     array.push(...item.path);
