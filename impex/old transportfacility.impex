@@ -1,0 +1,112 @@
+# ImpEx for Importing TransportFacilities into travel accelerator
+
+
+$catalogVersion = catalogVersion(catalog(id[default = 'bcfProductCatalog']), version[default = 'Staged'])[unique = true, default = 'bcfProductCatalog:Staged']
+
+INSERT_UPDATE TransportFacility; code[unique = true]; name[lang=en]; type(code); identifier(code)
+; ALR ; "ALERT BAY"          					; PORT ; PORT_ALERT_BAY 
+; ALF ; "ALLIFORD BAY"         					; PORT ; PORT_ALLIFORD_BAY 
+; BEC ; "BELLA COOLA"         					; PORT ; PORT_BELLA_COOLA 
+; PBB ; "MCLOUGHLIN BAY Bella Bella"            ; PORT ; PORT_MCLOUGHLIN_BAY 
+; BOW ; "SNUG COVE Bowen Island"        		; PORT ; PORT_SNUG_COVE 
+; BTW ; "BRENTWOOD BAY"                      	; PORT ; PORT_BRENTWOOD_BAY 
+; BKY ; "BUCKLEY BAY"     						; PORT ; PORT_BUCKLEY_BAY 
+; CAM ; "CAMPBELL RIVER"      					; PORT ; PORT_CAMPBELL_RIVER
+; CHM ; "CHEMAINUS"          					; PORT ; PORT_CHEMAINUS  
+; CMX ; "LITTLE RIVER Comox"              		; PORT ; PORT_LITTLE_RIVER 
+; COR ; "WHALETOWN"             				; PORT ; PORT_WHALETOWN 
+; CFT ; "CROFTON"           					; PORT ; PORT_CROFTON 
+; DEA ; "DEAS DOCK"       						; PORT ; PORT_DEAS_DOCK 
+; DNE ; "GRAVELLY BAY Denman Island East"       ; PORT ; PORT_GRAVELLY_BAY 
+; DNM ; "DENMAN ISLAND WEST"                    ; PORT ; PORT_DENMAN_ISLAND_WEST 
+; ERL ; "EARLS COVE"            				; PORT ; PORT_EARLS_COVE 
+; FUL ; "FULFORD HARBOUR"  						; PORT ; PORT_FULFORD_HARBOUR 
+; GAB ; "DESCANSO BAY"        					; PORT ; PORT_DESCANSO_BAY 
+; NBN ; "NEW BRIGHTON"         					; PORT ; PORT_NEW_BRIGHTON 
+; HRB ; "HERIOT BAY"             				; PORT ; PORT_HERIOT_BAY 
+; HRN ; "SHINGLE SPIT"                         	; PORT ; PORT_SHINGLE_SPIT 
+; HSB ; "HORSESHOE BAY West Vancouver"      	; PORT ; PORT_HORSESHOE_BAY 
+; EAS ; "EASTBOURNE"        					; PORT ; PORT_EASTBOURNE 
+; KTS ; "KEATS LANDING"     					; PORT ; PORT_KEATS_LANDING  
+; KLE ; "KLEMTU"                				; PORT ; PORT_KLEMTU 
+; LNG ; "LANGDALE Gibsons"              		; PORT ; PORT_LANGDALE 
+; PLH ; "LONG HARBOUR"                   	    ; PORT ; PORT_LONG_HARBOUR 
+; MIL ; "MILL BAY"          					; PORT ; PORT_MILL_BAY 
+; NAN ; "DEPARTURE BAY Nanaimo"           		; PORT ; PORT_DEPARTURE_BAY 
+; DUK ; "DUKE POINT Nanaimo"          			; PORT ; PORT_DUKE_POINT 
+; NAH ; "NANAIMO HARBOUR Nanaimo"            	; PORT ; PORT_NANAIMO_HARBOUR 
+; POF ; "OCEAN FALLS"          					; PORT ; PORT_OCEAN_FALLS 
+; POB ; "OTTER BAY"             				; PORT ; PORT_OTTER_BAY 
+; PEN ; "PENELAKUT ISLAND"                      ; PORT ; PORT_PENELAKUT_ISLAND 
+; MCN ; "PORT MCNEILL"       					; PORT ; PORT_PORT_MCNEILL 
+; PPH ; "BEAR COVE Port Hardy"         			; PORT ; PORT_BEAR_COVE 
+; PWR ; "WESTVIEW Powell River"        	 		; PORT ; PORT_WESTVIEW 
+; PPR ; "PRINCE RUPERT"           				; PORT ; PORT_PRINCE_RUPERT 
+; QDR ; "QUATHIASKI COVE"       				; PORT ; PORT_QUATHIASKI_COVE 
+; SLT ; "SALTERY BAY Powell River"          	; PORT ; PORT_SALTERY_BAY 
+; PST ; "LYALL HARBOUR"        					; PORT ; PORT_LYALL_HARBOUR 
+; SHW ; "SHEARWATER"            				; PORT ; PORT_SHEARWATER 
+; PSK ; "SKIDEGATE"            					; PORT ; PORT_SKIDEGATE 
+; SOI ; "SOINTULA"            					; PORT ; PORT_SOINTULA 
+; PSB ; "STURDIES BAY"         					; PORT ; PORT_STURDIES_BAY 
+; SWB ; "SWARTZ BAY Victoria"           		; PORT ; PORT_SWARTZ_BAY 
+; TEX ; "BLUBBER BAY"          					; PORT ; PORT_BLUBBER_BAY 
+; THT ; "PREEDY HARBOUR Thetis Island"          ; PORT ; PORT_PREEDY_HARBOUR 
+; TSA ; "TSAWWASSEN"          					; PORT ; PORT_TSAWWASSEN 
+; VES ; "VESUVIUS"     							; PORT ; PORT_VESUVIUS  
+; PVB ; "VILLAGE BAY Mayne Island"              ; PORT ; PORT_VILLAGE_BAY 
+
+
+
+# ImpEx for Importing TransportFacilityLocationRelation into travel accelerator
+INSERT_UPDATE Location; code[unique = true] ; transportFacility(code)
+#location code and associate transport facility code
+# TBD_LOCATION is for the data which has something unknown.
+; BELLA BELLA        			; PBB
+; BELLA COOLA        			; BEC
+; BOWEN ISLAND       			; BOW
+; BRENTWOOD BAY      			; BTW
+; CAMPBELL RIVER     			; CAM
+; CHARLOTTE E        			; ALF
+; CHEMAINUS          			; CHM
+; COMOX              			; CMX
+; COWICHAN VALLEY A  			; MIL
+; DELTA              			; TSA
+; DENMAN ISLAND      			; DNM
+; DENNY ISLAND       			; SHW
+; EARLS COVE         			; ERL
+; FANNY BAY          			; BKY
+; GABRIOLA           			; GAB
+; GALIANO ISLAND     			; PSB
+; GAMBIER ISLAND     			; NBN
+; GIBSONS            			; LNG
+; GRAVELLY BAY DENMAN ISLAND    ; DNE
+; HORNBY ISLAND            		; HRN
+; KEATS ISLAND            		; EAS, KTS
+; LADYSMITH            			; CFT
+; LONG HARBOUR            		; PLH
+; MALCOLM ISLAND            	; SOI
+; MAYNE ISLAND             		; PVB
+; MT WADDINGTON A            	; ALR
+; NANAIMO        			    ; NAN, DUK, NAH
+; OCEAN FALLS           	    ; POF
+; PENDER ISLAND            		; POB
+; PENELAKUT ISLAND            	; PEN
+; PORT HARDY            		; PPH
+; PORT MCNEILL            		; MCN
+; POWELL RIVER            		; PWR, SLT
+; PRINCE RUPERT            		; PPR
+; QUADRA ISLAND            		; HRB
+; QUATHIASKI COVE               ; QDR
+; RICHMOND            			; DEA
+; SALT SPRINT ISLAND            ; FUL
+; SATURNA ISLAND            	; PST
+; SIDNEY            			; SWB
+; SKIDEGATE LANDING            	; PSK
+; SWINDLE ISLAND            	; KLE
+; TEXADA ISLAND            		; TEX
+; THETIS ISLAND            		; THT
+; VESUVIUS            			; VES
+; WEST VANCOUVER            	; HSB
+; WHALETOWN CORTEZ ISLAND       ; COR
+### missing mayne island

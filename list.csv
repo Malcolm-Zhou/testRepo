@@ -1,23 +1,68 @@
-"ID";"Name";"Customer ID";"Customer Type";
-erikj54@gmail.com;Erik Johnson;f95aa878-5a11-4a29-aaf5-9c3c79c4c7c8;Registered;
-linda.liu@pwc.com;linda liu;4085801f-64c4-42df-b54f-dadc4311127d;Registered;
-gi.sun@rustic.com;Gi Sun;;Registered;
-anil.gupta@rustic.com;Anil Gupta;;Registered;
-akiro.nakamura@pronto.com;Akiro Nakamura;;Registered;
-mingmei.wang@pronto.com;Mingmei Wang;;Registered;
-mark.rivers@pronto.com;Mark Rivers;;Registered;
-admin@hybristravel.com;John Smith;;Registered;
-james.bell@pronto.com;James Bell;;Registered;
-william.hunter@rustic.com;William Hunter;;Registered;
-jane.smith@rustic.com;Jane Smith;;Registered;
-arranger@hybristravel.com;Mark Jones;;Registered;
-hanna.schmidt@hybristravel.com;Hanna Schmidt;;Registered;
-jane.smith1@mailinator.com;Jane Smith;;Registered;
-rajesh.tiwari@mailinator.com;Rajesh Tiwari;;Registered;
-mohan.gupta@mailinator.com;Mohan Gupta;;Registered;
-amit.rana@mailinator.com;Amit Rana;;Registered;
-deepak.khanjeja@mailinator.com;Deepak Khaneja;;Registered;
-ram.sharma@mailinator.com;Ram Sharma;;Registered;
-neha.sharma@mailinator.com;Neha Sharma;;Registered;
-cxcontextcustomer@hybris.com;Cxer Contexter;;Registered;
-anonymous;Anonymous;;Null;
+ALB; Queen of Alberni;       99;     184;;Cafeteria, snack bar, video arcade, elevator, escalator;;;;;;;;;;
+BOW; Bowen Queen;;    99;     180;;Vending machines;;;;;;;;;;;;;;       
+CAP; Queen of Capilano;      50;     189;;Snack bar, elevator;;;;;;;;;;;;;;    
+CHI; Queen of Chilliwack;    99;     162;;Cafeteria, snack bar, gift shop, elevator;;;;;;;;;;;      
+COQ; Queen of Coquitlam;     99;     180;;Snack bar, cafeteria, gift shop, video arcade, children's play area, elevator;;;;;;;  
+COW; Queen of Cowichan;      99;     180;;Snack bar, cafeteria, gift shop, video arcade, children's play area, elevator;;;;;;;   
+CUM; Queen of Cumberland;    99;     171;;Snack bar, elevator;;;;;;;;;;;;;;    
+ESQ; Queen of Esquimalt;     99;     162;;Cafeteria, snack bar, gift shop, video arcade, children's play area, elevator;;;;;;;  
+MQN; Mayne Queen;;    75;     180;;Vending machines;;;;;;;;;;;;;;       
+NAN; Queen of Nanaimo;       80;     176;;Snack bar, cafeteria, video arcade, seasonal gift shop, children's play area, elevator;;;;;; 
+NIP; North Island Princess;  90;     168;;Vending machines;;;;;;;;;;;;;;;
+NWM; Queen of New Westminster       99;     164;;Cafeteria, snack bar, gift shop, video arcade, children's play area, elevator;;;;;;;   
+OAK; Queen of Oak Bay;       99;     180;;Cafeteria, snack bar, gift shop, video arcade, elevator, children's play area;;;;;;;   
+PRQ; Powell River Queen;     99;     237;;Vending machines;;;;;;;;;;;;;;       
+QPR; Queen of Prince Rupert; 99;     156;;Cafeteria, gift shop, video arcade, children's play area, elevator;;;;;;;;     
+QQ2; Quadra Queen II;;99;     180;;Vending machines;;;;;;;;;;;;;;       
+SAA; Queen of Saanich;       99;     164;;Cafeteria, snack bar, gift shop, video arcade, elevator, children's play area;;;;;;;  
+SBC; Spirit of British Columbia     99;     181;;Pacific Buffet, cafeteria, snack bar, gift shop, video arcade,  play area, elevators;;;;;;    
+SKE; Skeena Queen;;   99;     190;;Vending machines;;;;;;;;;;;;;;;
+SUR; Queen of Surrey;;99;     180;;Cafeteria, snack bar, gift shop, video arcade, children's play area, elevator;;;;;;;  
+SVI; Spirit of Vancouver Island     99;     181;;Pacific Buffet, cafeteria, snack bar, Lantern Cafe, gift shop, video arcade, play area, elevators;;;;      
+TEN; M. V. Tenaka;;   75;     176;;Vending machines;;;;;;;;;;;;;;       
+TSA; Queen of Tsawwassen;    75;     176;;Cafeteria, elevator;;;;;;;;;;;;;;     
+VAN; Queen of Vancouver;     99;     170;;Cafeteria, snack bar, gift shop, video arcade, elevator, children's play area;;;;;;;   
+BUR; Queen of Burnaby;       99;     172;;Cafeteria, gift shop, children's play area, elevator;;;;;;;;;;    
+REN; Coastal Renaissance;    99;     180;;Coastal Cafe, Coast Cafe Express, Seawest Lounge, Sitka Coffe Place, Passages Gift Shop, Kidzone play area, business workstations, conf
+INS; Coastal Inspiration;    99;     180;;Coastal Cafe, Coast Cafe Express, Seawest Lounge, Sitka Coffe Place, Passages Gift Shop, Kidzone play area, business workstations, conf
+CEL; Coastal Celebration;    99;     180;;Coastal Cafe, Coast Cafe Express, Seawest Lounge, Sitka Coffe Place, Passages Gift Shop, Kidzone play area, business workstations, conf
+NV2; Northern Expedition;    99;     187;;Our new cruise ferry features 55 modern staterooms, reserved seating in the Aurora Lounge, spacious passenger lounges, great dining in 
+NV1; Northern Adventure;     99;     162;;Coastal Cafe, Coast Cafe Express, Seawest Lounge, Sitka Coffe Place, Passages Gift Shop, Kidzone play area, business workstations, conf
+RAV; Salish Raven;;   99;     187;;cafeteria, pet area, gift shop, children's play area, work/study stations, elevators, accessible washrooms, outside seating;    
+EAG; Salish Eagle;;   99;     187;;cafeteria, pet area, gift shop, children's play area, work/study stations, elevators, accessible washrooms, outside seating;    
+ORC; Salish Orca;;    99;     187;;cafeteria, pet area, gift shop, children's play area, work/study stations, elevators, accessible washrooms, outside seating 
+
+On Tue, Jun 20, 2017 at 3:10 PM, Malcolm Zhou (US - Advisory) <malcolm.m.zhou@pwc.com> wrote:
+ALB         Queen of Alberni               99             184                Cafeteria, snack bar, video arcade, elevator, escalator                                                                                
+BOW         Bowen Queen                    99             180                Vending machines                                                                                                                       
+CAP         Queen of Capilano              50             189                Snack bar, elevator                                                                                                                    
+CHI         Queen of Chilliwack            99             162                Cafeteria, snack bar, gift shop, elevator                                                                                              
+COQ         Queen of Coquitlam             99             180                Snack bar, cafeteria, gift shop, video arcade, children's play area, elevator                                                          
+COW         Queen of Cowichan              99             180                Snack bar, cafeteria, gift shop, video arcade, children's play area, elevator                                                           
+CUM         Queen of Cumberland            99             171                Snack bar, elevator                                                                                                                    
+ESQ         Queen of Esquimalt             99             162                Cafeteria, snack bar, gift shop, video arcade, children's play area, elevator                                                          
+MQN         Mayne Queen                    75             180                Vending machines                                                                                                                       
+NAN         Queen of Nanaimo               80             176                Snack bar, cafeteria, video arcade, seasonal gift shop, children's play area, elevator                                                 
+NIP         North Island Princess          90             168                Vending machines                                                                                                                        
+NWM         Queen of New Westminster       99             164                Cafeteria, snack bar, gift shop, video arcade, children's play area, elevator                                                           
+OAK         Queen of Oak Bay               99             180                Cafeteria, snack bar, gift shop, video arcade, elevator, children's play area                                                           
+PRQ         Powell River Queen             99             237                Vending machines                                                                                                                       
+QPR         Queen of Prince Rupert         99             156                Cafeteria, gift shop, video arcade, children's play area, elevator                                                                     
+QQ2         Quadra Queen II                99             180                Vending machines                                                                                                                       
+SAA         Queen of Saanich               99             164                Cafeteria, snack bar, gift shop, video arcade, elevator, children's play area                                                          
+SBC         Spirit of British Columbia     99             181                Pacific Buffet, cafeteria, snack bar, gift shop, video arcade,  play area, elevators                                                    
+SKE         Skeena Queen                   99             190                Vending machines                                                                                                                        
+SUR         Queen of Surrey                99             180                Cafeteria, snack bar, gift shop, video arcade, children's play area, elevator                                                          
+SVI         Spirit of Vancouver Island     99             181                Pacific Buffet, cafeteria, snack bar, Lantern Cafe, gift shop, video arcade, play area, elevators                                      
+TEN         M. V. Tenaka                   75             176                Vending machines                                                                                                                       
+TSA         Queen of Tsawwassen            75             176                Cafeteria, elevator                                                                                                                     
+VAN         Queen of Vancouver             99             170                Cafeteria, snack bar, gift shop, video arcade, elevator, children's play area                                                           
+BUR         Queen of Burnaby               99             172                Cafeteria, gift shop, children's play area, elevator                                                                                    
+REN         Coastal Renaissance            99             180                Coastal Cafe, Coast Cafe Express, Seawest Lounge, Sitka Coffe Place, Passages Gift Shop, Kidzone play area, business workstations, conf
+INS         Coastal Inspiration            99             180                Coastal Cafe, Coast Cafe Express, Seawest Lounge, Sitka Coffe Place, Passages Gift Shop, Kidzone play area, business workstations, conf
+CEL         Coastal Celebration            99             180                Coastal Cafe, Coast Cafe Express, Seawest Lounge, Sitka Coffe Place, Passages Gift Shop, Kidzone play area, business workstations, conf
+NV2         Northern Expedition            99             187                Our new cruise ferry features 55 modern staterooms, reserved seating in the Aurora Lounge, spacious passenger lounges, great dining in 
+NV1         Northern Adventure             99             162                Coastal Cafe, Coast Cafe Express, Seawest Lounge, Sitka Coffe Place, Passages Gift Shop, Kidzone play area, business workstations, conf
+RAV         Salish Raven                   99             187                cafeteria, pet area, gift shop, children's play area, work/study stations, elevators, accessible washrooms, outside seating            
+EAG         Salish Eagle                   99             187                cafeteria, pet area, gift shop, children's play area, work/study stations, elevators, accessible washrooms, outside seating            
+ORC         Salish Orca                    99             187                cafeteria, pet area, gift shop, children's play area, work/study stations, elevators, accessible washrooms, outside seating    

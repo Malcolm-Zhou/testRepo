@@ -1,0 +1,27 @@
+{
+    "bookingClientSystem": {
+        "clientCode": "PROXY_BOOKINGCLIENT_MYBCF"
+    },
+    "bookingType": {
+        "bookingType": "QUOTATION"
+    },
+    "products": {
+        "product": [{
+                "productId": "AD",
+                "productNumber": 1,
+                "productCategory": "PASSENGER"
+            },
+            {
+                "productId": "UH",
+                "productNumber": 1,
+                "productLength": 300,
+                "productCategory": "VEHICLE"
+            }
+        ]
+    },
+    "sailingEvent": {
+        "departurePortCode": "SWB",
+        "arrivalPortCode": "TSA",
+        "departureDateTime": "2017-09-01T15:00:00"
+    }
+}
