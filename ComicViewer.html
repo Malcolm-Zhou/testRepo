@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Local Image Waterfall Viewer</title>
@@ -8,17 +9,17 @@
             background-color: #313335;
             color: #bbbbbb;
         }
-
+        
         .center-block {
             display: block;
             margin-right: auto;
             margin-left: auto;
         }
-
+        
         .text-center {
             text-align: center;
         }
-
+        
         #dropDiv {
             border: dashed 10px #bbbbbb;
             border-radius: 10px;
@@ -27,61 +28,80 @@
             line-height: 900px;
             font-size: 40px;
         }
-
+        
         #viewerDiv {
             max-width: 80%;
         }
-
+        
         #viewerDiv img {
             display: block;
             margin: 5px auto 0 auto;
             max-width: inherit;
         }
-
+        
         .span {
             display: block;
             width: 100%;
             opacity: 0;
         }
-
+        
         .span:hover {
             opacity: 1;
         }
     </style>
 </head>
+
 <body>
-<div class="container-fluid">
-    <div id="dropDiv" class="center-block text-center">Drag all images here</div>
-    <div id="viewerDiv" class="center-block text-center">
-
+    <div class="container-fluid">
+        <input id="input" type="file" webkitdirectory onchange="showImagesByInput()">
+        <div id="dropDiv" class="center-block text-center">Drag all images here (NOT Folder)</div>
+        <div id="viewerDiv" class="center-block text-center"></div>
     </div>
-</div>
 
 
-<script>
-    window.onload = function () {
+    <script>
         let dropDiv = document.getElementById("dropDiv");
         let viewerDiv = document.getElementById("viewerDiv");
+        let input = document.getElementById("input");
 
-        dropDiv.ondragover = function (e) {
-            e.preventDefault();
+        window.onload = function() {
+            dropDiv.ondragover = function(e) {
+                e.preventDefault();
+            };
+            dropDiv.ondrop = function(e) {
+                e.preventDefault();
+
+                let files = e.dataTransfer.files;
+                showImages(files);
+            };
         };
-        dropDiv.ondrop = function (e) {
-            e.preventDefault();
 
-            let files = e.dataTransfer.files;
+        function showImagesByInput() {
+            let files = input.files;
+            let images = [];
+            for (let file of files) {
+                if (file.type != null && file.type.indexOf("image") > -1) {
+                    images.push(file);
+                }
+            }
+            console.log(images);
+            showImages(images);
+        }
+
+        function showImages(files) {
             let index = 0;
             if (files.length > 0) {
-                let loadImg = setInterval(function () {
+                let loadImg = setInterval(function() {
                     let fileReader = new FileReader();
                     fileReader.readAsDataURL(files[index]);
-                    fileReader.onload = function (e) {
+                    fileReader.onload = function(e) {
                         dropDiv.style.display = "none";
+                        input.style.display = "none";
                         let img = document.createElement("img");
                         img.src = fileReader.result;
                         let span = document.createElement("span");
                         span.className = "span center-block";
-                        if(files.length == (index + 1)){
+                        if (files.length == (index + 1)) {
                             span.innerHTML = index + 1 + " (END)";
                         } else {
                             span.innerHTML = index + 1;
@@ -89,16 +109,14 @@
                         viewerDiv.appendChild(img);
                         viewerDiv.appendChild(span);
                         index++;
-                        if(files.length == index) {
+                        if (files.length == index) {
                             clearInterval(loadImg);
                         }
                     };
                 }, 1000);
             }
-
-
-        };
-    }
-</script>
+        }
+    </script>
 </body>
+
 </html>
