@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <div id="jsonDiv">
+        <%- json %>
+    </div>
+
+    <button class="btn" data-clipboard-target="#jsonDiv">Copy</button>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+<script>
+    var clipboard = new Clipboard('.btn');
+    clipboard.on('success', function(e) {
+        e.clearSelection();
+        console.log('success');
+    });
+    clipboard.on('error', function(e) {
+        console.log('error');
+    });
+</script>
+
+</html>
